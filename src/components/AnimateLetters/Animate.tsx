@@ -1,13 +1,12 @@
 import "./index.scss";
 
 interface LetterAnimation {
-  class: string;
+  class?: string;
   strArray: string[];
   index: number;
 }
 
 function Animate(props: LetterAnimation) {
-  console.log(props.class);
   return (
     <span>
       {props.strArray.map((char, i) => (

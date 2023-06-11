@@ -35,10 +35,12 @@
       opacity: 0.6;
     }
     img {
-      scale: 3;
-      width: 52px;
+      scale: 2;
+      display: inline-block;
+      width: 28px;
       margin-left: 20px;
-      margin-right: 1px;
+      margin-right: 6px;
+      margin-bottom: 10px;
       opacity: 0;
       height: auto;
       animation: rotateIn 1s 1.4s linear both;
