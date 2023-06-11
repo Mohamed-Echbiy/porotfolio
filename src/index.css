@@ -3,6 +3,8 @@ html {
 }
 * {
   list-style: none;
+  text-decoration: none;
+  color: inherit;
 }
 body {
   margin: 0;
