@@ -28,6 +28,7 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.12.1",
     "sass": "^1.63.3",
+    "swiper": "^9.4.0",
     "TagCloud": "^2.3.2"
   },
   "devDependencies": {

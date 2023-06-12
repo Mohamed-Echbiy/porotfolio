@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
 import LogoS from "../../assets/images/logo_m.png";
-import { GiSkills } from "react-icons/gi";
+import { GiErlenmeyer, GiSkills } from "react-icons/gi";
 import {
   FaEnvelope,
   FaGithubAlt,
@@ -41,6 +41,14 @@ function SideBar() {
           }
         >
           <FaUser className="svg-class" />
+        </NavLink>
+        <NavLink
+          to={"/projects"}
+          className={({ isActive, isPending }) =>
+            isPending ? "" : isActive ? "active" : ""
+          }
+        >
+          <GiErlenmeyer className="svg-class" />
         </NavLink>
         <NavLink
           to={"/contact"}
