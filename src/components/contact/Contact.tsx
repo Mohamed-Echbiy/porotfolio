@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
       <div className="container">contact</div>
-      <Loader type="pacman" />
+      <Loader active type="pacman" />
     </>
   );
 }

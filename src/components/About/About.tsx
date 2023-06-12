@@ -3,9 +3,6 @@ import Animate from "../AnimateLetters/Animate";
 import "./index.scss";
 import Lottie from "lottie-react";
 import animation from "../../assets/animation/121929-about.json";
-import { DiNodejs } from "react-icons/di";
-import { SiJavascript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
-import { FaHtml5, FaReact } from "react-icons/fa";
 import Loader from "react-loaders";
 function About() {
   const [classLetters, setClassLetters] = useState("text-animate");
@@ -80,7 +77,7 @@ function About() {
           <Lottie animationData={animation} />
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader active type="pacman" />
     </>
   );
 }

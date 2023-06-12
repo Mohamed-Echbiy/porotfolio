@@ -12,7 +12,6 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
-  SiStripe,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";

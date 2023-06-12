@@ -8,7 +8,7 @@ function Skills() {
       <div className="container skills-page">
         <TextSphere />
       </div>
-      <Loader type="pacman" />
+      <Loader active type="pacman" />
     </>
   );
 }

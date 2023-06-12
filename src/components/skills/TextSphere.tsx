@@ -1,4 +1,6 @@
-import { useEffect } from "react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+import { useEffect, useRef } from "react";
 
 // Importing TagCloud package
 import TagCloud from "TagCloud";
@@ -7,7 +9,7 @@ const TextShpere = () => {
   // Animation settings for Text Cloud
   useEffect(() => {
     return () => {
-      const container = ".tagcloud";
+      const container = ".tagCloud";
       const texts = [
         "Html",
         "CSS",
