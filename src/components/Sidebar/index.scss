@@ -5,7 +5,7 @@
   position: absolute;
   z-index: 3;
   top: 0;
-  min-height: 500px;
+  min-height: 100vh;
 
   .logo {
     display: block;
@@ -69,10 +69,15 @@
     }
     :nth-child(2) {
       &::after {
-        content: "ABOUT";
+        content: "SKILLS";
       }
     }
     :nth-child(3) {
+      &::after {
+        content: "ABOUT";
+      }
+    }
+    :nth-child(4) {
       &::after {
         content: "CONTACT";
       }

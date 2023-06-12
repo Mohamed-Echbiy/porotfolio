@@ -1,8 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
 import LogoS from "../../assets/images/logo_m.png";
-import LogoSub from "../../assets/images/logo_sub.png";
-
+import { GiSkills } from "react-icons/gi";
 import {
   FaEnvelope,
   FaGithubAlt,
@@ -12,7 +11,7 @@ import {
 } from "react-icons/fa";
 function SideBar() {
   return (
-    <div className="nav-bar">
+    <div className="nav-bar" data-cursor-size="1px">
       <Link className="logo" to={"/"}>
         <img src={LogoS} alt="logo" className="" />
       </Link>
@@ -24,6 +23,15 @@ function SideBar() {
           }
         >
           <FaHome className="svg-class" />
+        </NavLink>
+
+        <NavLink
+          to={"/skills"}
+          className={({ isActive, isPending }) =>
+            isPending ? "" : isActive ? "active" : ""
+          }
+        >
+          <GiSkills className="svg-class" />
         </NavLink>
 
         <NavLink

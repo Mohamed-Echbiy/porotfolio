@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Animate from "../AnimateLetters/Animate";
 import "./index.scss";
+import Lottie from "lottie-react";
+import animation from "../../assets/animation/121929-about.json";
 import { DiNodejs } from "react-icons/di";
 import { SiJavascript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { FaHtml5, FaReact } from "react-icons/fa";
@@ -55,7 +57,7 @@ function About() {
           </p>
         </div>
         <div className="stage-cube-cont">
-          <div className="cubespinner">
+          {/* <div className="cubespinner">
             <div className="face1">
               <SiNextdotjs color="#FFFFFF" />
             </div>
@@ -74,7 +76,8 @@ function About() {
             <div className="face6">
               <DiNodejs color="#8CC84B" />
             </div>
-          </div>
+          </div> */}
+          <Lottie animationData={animation} />
         </div>
       </div>
       <Loader type="pacman" />
