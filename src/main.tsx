@@ -9,6 +9,7 @@ import About from "./components/About/About.tsx";
 import Contact from "./components/contact/Contact.tsx";
 import Skills from "./components/skills/Skills.tsx";
 import Projects from "./components/Projects/Projects.tsx";
+import { Toaster } from "react-hot-toast";
 
 const routes = createBrowserRouter([
   {
@@ -42,5 +43,6 @@ const routes = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={routes} />
+    <Toaster />
   </React.StrictMode>
 );

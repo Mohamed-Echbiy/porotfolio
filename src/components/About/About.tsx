@@ -54,26 +54,6 @@ function About() {
           </p>
         </div>
         <div className="stage-cube-cont">
-          {/* <div className="cubespinner">
-            <div className="face1">
-              <SiNextdotjs color="#FFFFFF" />
-            </div>
-            <div className="face2">
-              <FaReact color="#5ED4F4 " />
-            </div>
-            <div className="face3">
-              <SiTailwindcss color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <SiJavascript color="#EFD81D" />
-            </div>
-            <div className="face5">
-              <FaHtml5 color="#F06529 " />
-            </div>
-            <div className="face6">
-              <DiNodejs color="#8CC84B" />
-            </div>
-          </div> */}
           <Lottie animationData={animation} />
         </div>
       </div>

@@ -61,12 +61,20 @@ function SideBar() {
       </nav>
       <ul>
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/mohamed-echbiy-442aa9244/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin className="svg-class" />
           </a>
         </li>
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Mohamed-Echbiy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithubAlt className="svg-class" />
           </a>
         </li>
