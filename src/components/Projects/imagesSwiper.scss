@@ -17,6 +17,11 @@
     }
   }
 }
+.links-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 // @media screen and (max-width: 420px) {
 //   .container-swiper {
 //     div.swiper {
