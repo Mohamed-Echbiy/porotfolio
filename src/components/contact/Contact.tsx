@@ -4,8 +4,9 @@ import Animate from "../AnimateLetters/Animate";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
-import Lottie from "lottie-react";
-import animation from "../../assets/animation/58728-contact-chat.json";
+// import Lottie from "lottie-react";
+// import animation from "../../assets/animation/58728-contact-chat.json";
+import LottieReact from "../../LottieReact";
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const [formData, SetFormData] = useState<{
@@ -24,7 +25,9 @@ const Contact = () => {
     const setTime = setTimeout(() => {
       setLetterClass("text-animate-hover");
     }, 3000);
-    return clearTimeout(setTime);
+    return () => {
+      clearTimeout(setTime);
+    };
   }, []);
 
   const sendEmail = async (e: { preventDefault: () => void }) => {
@@ -140,7 +143,8 @@ const Contact = () => {
           <span>echbiymed@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <Lottie animationData={animation} />
+          {/* <Lottie animationData={animation} /> */}
+          <LottieReact />
         </div>
       </div>
       <Loader active type="pacman" />
